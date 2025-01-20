@@ -8,7 +8,7 @@ Some methods from std::vector
 
 • **back** - provides access to the last element
 ***
-##Working with vector size
+## Working with vector size
 • **empty** - checking for emptiness
 
 • **size** - return vector size
@@ -17,7 +17,7 @@ Some methods from std::vector
 
 • **reserve** - reserves the capacity of the vector
 ***
-##Modificators
+## Modificators
 • **clear** - clears the array and makes it empty
 
 • **pushBack** - adds an element to the end of the vector
@@ -30,7 +30,7 @@ Some methods from std::vector
 
 • **swap** - swaps the contents of two vectors in places
 ***
-##Iterators
+## Iterators
 • **begin** - returns a pointer to the null element
 
 • **end** - returns a pointer to the *[size]* element

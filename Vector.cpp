@@ -107,7 +107,7 @@ Vector<T>& Vector<T>::operator=(const Vector& other) {
     }
 
     data_ = new T[other.capacity_];
-    std::copy(other.data_, other.data + other.size_, data_);
+    std::copy(other.data_, other.data_ + other.size_, data_);
     size_ = other.size_;
     capacity_ = other.capacity_;
 
@@ -131,7 +131,7 @@ Vector<T>& Vector<T>::operator=(Vector&& other) noexcept {
 
 template<typename T>
 bool Vector<T>::operator==(const Vector& other) const {
-    if (data_ == nullptr || other.data == nullptr || size_ != other.size_) {
+    if (data_ == nullptr || other.data_ == nullptr || size_ != other.size_) {
         return false;
     }
 

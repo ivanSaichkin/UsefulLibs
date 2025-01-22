@@ -1,5 +1,8 @@
 #include "Vector.hpp"
 
+#ifndef VECTOR_CPP
+#define VECTOR_CPP
+
 #include <algorithm>
 
 namespace {
@@ -277,3 +280,5 @@ template<typename T>
 T* Vector<T>::rend() {
     return data_ - 1;
 }
+
+#endif

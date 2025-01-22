@@ -1,4 +1,5 @@
-#pragma once
+#ifndef VECTOR_HPP
+#define VECTOR_HPP
 
 #include <cstddef>
 #include <initializer_list>
@@ -57,3 +58,6 @@ class Vector {
     T* rbegin();
     T* rend();
 };
+
+#include "Vector.cpp"
+#endif

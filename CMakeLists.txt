@@ -7,4 +7,4 @@ set(SOURCES
 
 add_library(Vector STATIC ${SOURCES})
 
-target_include_directories(Vector PUBLIC libVector)
+target_include_directories(Vector PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

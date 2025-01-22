@@ -118,7 +118,7 @@ template<typename T>
 Vector<T>& Vector<T>::operator=(Vector&& other) noexcept {
     if (this != &other) {
         delete[] data_;
-        data_ = other.data;
+        data_ = other.data_;
         capacity_ = other.capacity_;
         size_ = other.size_;
 

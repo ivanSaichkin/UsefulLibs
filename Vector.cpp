@@ -9,7 +9,7 @@ const size_t kDefaultSize{8};
 // constructors
 
 template<typename T>
-Vector<T>::Vector() : data_(nullptr), capacity_(kDefaultSize), size_(0) {
+Vector<T>::Vector() : data_(new T[kDefaultSize]), capacity_(kDefaultSize), size_(0) {
 }
 
 template<typename T>
@@ -201,10 +201,6 @@ void Vector<T>::clear() {
 
 template<typename T>
 void Vector<T>::pushBack(const T& element) {
-    if (data_ == nullptr) {
-        throw std::invalid_argument("invalid data to pushback");
-    }
-
     if (size_ >= capacity_) {
         resize();
     }

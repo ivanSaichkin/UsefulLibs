@@ -9,8 +9,8 @@ int main() {
     vec.pushBack(3);
 
     std::cout << "Vector elements: ";
-    for (size_t i = 0; i < vec.size(); ++i) {
-        std::cout << vec[i] << " ";
+    for (int i : vec) {
+        std::cout << i << " ";
     }
     std::cout << std::endl;
 

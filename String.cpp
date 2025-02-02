@@ -204,3 +204,12 @@ char* String::end() {
 
     return data_ + length_;
 }
+
+// Static methods
+size_t String::numStrigs(){
+    return numStrings_;
+}
+
+void String::resetNumStrings(){
+    numStrings_ = 0;
+}

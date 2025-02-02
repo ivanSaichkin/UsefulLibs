@@ -46,4 +46,8 @@ class String {
     // Iterators
     char* begin();
     char* end();
+
+    // Static methods
+    static size_t numStrigs();
+    static void resetNumStrings();
 };

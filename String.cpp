@@ -206,10 +206,10 @@ char* String::end() {
 }
 
 // Static methods
-size_t String::numStrigs(){
+size_t String::numStrigs() {
     return numStrings_;
 }
 
-void String::resetNumStrings(){
+void String::resetNumStrings() {
     numStrings_ = 0;
 }
